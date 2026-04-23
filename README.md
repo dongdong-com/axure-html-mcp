@@ -24,6 +24,33 @@ Axure RP → HTML Export → axure-mcp-server.mjs → AI (gemini / Claude Code)
 
 ---
 
+## 공식 Axure MCP와의 비교
+
+2026년 2월, Axure에서 공식 MCP를 알파로 출시했습니다.  
+두 MCP는 **대상 파일과 사용 환경이 다르기 때문에 상호 보완적**입니다.
+
+| 항목 | 공식 Axure MCP | 이 MCP (axure-html-mcp) |
+|------|:---:|:---:|
+| 연결 대상 | Axure Cloud (온라인) | Axure HTML Export (로컬 파일) |
+| 인증 | Axure 계정 로그인 필요 | 불필요 |
+| 공유 설정 | 파일이 공개여야 함 | 제한 없음 (로컬) |
+| 읽기/쓰기 | 읽기 전용 | 읽기 전용 |
+| 지원 파일 | Whiteboard, Document | HTML Export된 Prototype |
+| RP 프로토타입 | ❌ 지원 안 함 | ✅ 지원 |
+| 출시 상태 | 알파 (2026.02) | 안정 |
+| 설치 | URL 한 줄 등록 | npm install 필요 |
+| 오프라인 사용 | ❌ 불가 | ✅ 가능 |
+| 사내 보안 파일 | 공개 설정 필요 (보안 위험) | ✅ 로컬 파일 그대로 사용 |
+
+**언제 이 MCP를 쓰면 좋은가?**
+
+- Axure RP로 만든 **프로토타입(Prototype)** 기획서를 AI로 분석하고 싶을 때
+- 사내망이나 VPN 환경에서 **외부 클라우드에 올리기 어려운 파일**일 때
+- Axure Cloud 계정 없이 **로컬 HTML Export 파일만으로** 바로 쓰고 싶을 때
+- 공식 MCP가 아직 지원하지 않는 **RP 프로토타입 화면 분석**이 필요할 때
+
+---
+
 ## 사전 조건
 
 ### 1. Axure에서 HTML로 내보내기
