@@ -1,0 +1,6 @@
+node_modules/
+axure-last-used.json
+.env
+*.env
+.DS_Store
+Thumbs.db
